@@ -1,0 +1,101 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Silent Library</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/51ad544b2f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul class="navi-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="booklist.html">Book List</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="register.html">Login</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+
+<!-----Members Registration Form----->
+
+<div>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="icons regform">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <form id="login" class="input-group">
+            <input type="email" class="input-field" placeholder="Enter Email" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <span class="rempass">Remember Password</span><input type="checkbox" class="checkbox">
+            <button type="submit" class="hero-btn red-btn">Log In</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="Full Name" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="text" class="input-field" placeholder="Confirm Password" required>
+            <input type="date" class="input-field" placeholder="Birthday" required>
+            <button type="submit" class="hero-btn red-btn">Register</button>
+        </form>
+    </div>  
+</div>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+</script>
+
+<!-----Footer----->
+
+<section class="footer">
+    <h4>SILENT LIBRARY</h4>
+    <p>Silent Library seeks to serve as the cultural and intellectual crossroads of the community.</p>
+    <div class="icons">
+       <i class="fa fa-facebook"></i>
+       <i class="fa fa-twitter"></i>
+       <i class="fa fa-instagram"></i>
+       <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Ferds Belloza</p>
+</section>
+
+    <!-------------- Javascript for Toggle Menu ---------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+    </body>
+</html>

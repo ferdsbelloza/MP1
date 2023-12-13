@@ -1,0 +1,149 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Silent Library</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/51ad544b2f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul class="navi-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="booklist.html">Book List</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="register.html">Login</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        
+<div class="text-box">
+    <h1>Silent Library</h1>
+    <p>The Silent Library system consists of the Main Library and Macalino and Avena branches.<br>With more than 100 programs and events per year, the library seeks to serve as the cutural and intellectual crossroads of the community.</p>
+    <a href="about.html"class="hero-btn">Click Here To Know More</a>
+</div>
+        </section>
+
+<!-----Genre----->
+
+<section class="genre">
+    <h1>Available Books to Borrow</h1>
+    <p>Find out what you're looking for! Take a leap and check out the available books from the lists below.</p>
+    <div class="row">
+        <div class="genre-col">
+            <h3>Fiction</h3>
+            <p>Explore the author's imaginative and artistic freedom. Be a part of another world.</p>
+        </div>
+        <div class="genre-col">
+            <h3>Non-Fiction</h3>
+            <p>Gain knowledge or information about wordly events. Looking for hard facts and accurate information? Look here!</p>
+        </div>
+        <div class="genre-col">
+            <h3>References</h3>
+            <p>Provide citations and source of information. Use additional references to ascertain your study!</p>
+        </div>
+    </div>
+</section>
+
+<!-----Events----->
+
+<section class="Events">
+    <h1>Library Events and Promotions</h1>
+    <p>Join us for a full slate of programming and events at the Silent Library!</p>
+
+    <div class="row">
+        <div class="Events-col">
+            <img src="Images/astrologynight.png">
+            <div class="layer">
+                <h3>Astrology Night</h3>
+            </div>
+        </div>
+        <div class="Events-col">
+            <img src="Images/bookclub.png">
+            <div class="layer">
+                <h3>Book Club</h3>
+            </div>
+        </div>
+        <div class="Events-col">
+            <img src="Images/happyholloween.png">
+            <div class="layer">
+                <h3>Happy Holloween</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----Borrowers List----->
+
+<section class="borrowerslist">
+    <h1>Borrowers List</h1>
+    <p>Borrow books for free!</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="Images/user1.JPG">
+            <div>
+                <p>I wanted to write a brief note to tell you that I am so happy and impressed with the Story Books that Silent Library has purchased. The response from our children has been fantastic. Parents love them, kids love them, and even the grandparents are impressed! (Grandparents can be very discerning when it comes to picture books!)</p>
+                <h3>Loren Flojerns</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="Images/user2.JPG">
+            <div>
+                <p>With everything that is going on in the world, I believe reading engaging thought provoking pieces and sharing in discussion is more important than ever. This is my first book club in this format so I am looking forward to sharing thoughts on this months read!</p>
+                <h3>Tomsie Leckerer</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----Call To Action----->
+
+<section class="cta">
+    <h1>Be a member so you can borrow books and join the events for free!</h1>
+    <a href="register.html" class="hero-btn">Register Now</a>
+</section>
+
+<!-----Footer----->
+
+<section class="footer">
+    <h4>SILENT LIBRARY</h4>
+    <p>Silent Library seeks to serve as the cultural and intellectual crossroads of the community.</p>
+    <div class="icons">
+       <i class="fa fa-facebook"></i>
+       <i class="fa fa-twitter"></i>
+       <i class="fa fa-instagram"></i>
+       <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Ferds Belloza</p>
+</section>
+
+    <!-------------- Javascript for Toggle Menu ---------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    </body>
+</html>

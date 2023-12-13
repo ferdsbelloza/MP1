@@ -1,0 +1,70 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Silent Library</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/51ad544b2f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul class="navi-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="booklist.html">Book List</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>More About Us</h1>
+        </section>
+
+<!-----About Us Content----->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Silent Library</h1>
+            <p>Throughout the 1900s, under the names Silent Town Library and Silent Reading Room and Library Association, a book-lending institution existed in such locations as the Third Congregational Church and on the fourth floor of what is now 115 Jubilee Ave. For a subscription fee, members could borrow an allotted number of books. Around 1920, a small collection of books was acquired and circulated from the Nebukadenar Opique House. In 1925, a small group of Jubilee residents, each subscribing $6 a share, formed the Silent Town Library.</p>
+            <a href="" class="hero-btn red-btn">Show More</a>
+        </div>
+        <div class="about-col">
+            <img src="Images/staff.png">
+        </div>
+    </div>
+</section>
+
+
+<!-----Footer----->
+
+<section class="footer">
+    <h4>SILENT LIBRARY</h4>
+    <p>Silent Library seeks to serve as the cultural and intellectual crossroads of the community.</p>
+    <div class="icons">
+       <i class="fa fa-facebook"></i>
+       <i class="fa fa-twitter"></i>
+       <i class="fa fa-instagram"></i>
+       <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Ferds Belloza</p>
+</section>
+
+<!-------------- Javascript for Toggle Menu ---------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    </body>
+</html>
